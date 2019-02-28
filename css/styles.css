@@ -9,7 +9,7 @@
 body {
   scroll-behavior: smooth;
   font-family: "Source Sans Pro", sans-serif;
-  color: #502c37; }
+  color: #2c3350; }
 
 a {
   text-decoration: none;
@@ -36,7 +36,7 @@ a {
   margin-left: 10px; }
 
 .nav-btn {
-  background: #f86045;
+  background: #5aa1fd;
   color: white;
   padding: 10px 20px;
   border-radius: 20px;
@@ -88,17 +88,17 @@ a {
     text-align: center; }
     .options-container .option .option-img {
       margin-bottom: 10px;
-      color: #f86045; }
+      color: #5aa1fd; }
     .options-container .option .option-heading {
       margin-bottom: 20px;
-      color: #f86045;
+      color: #5aa1fd;
       font-weight: 400; }
     .options-container .option .option-p {
-      color: #a3999d;
+      color: #999aa3;
       margin-bottom: 20px; }
 
 .footer-bar {
-  background: #f86045; }
+  background: #5aa1fd; }
   .footer-bar .footer-bar-container {
     display: -webkit-box;
     display: -ms-flexbox;
