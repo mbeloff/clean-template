@@ -1,0 +1,146 @@
+$font-1: 'Source Sans Pro',
+sans-serif;
+$prime: #f86045;
+$dark: #502c37;
+$grey: #a3999d;
+$break-med: 768px;
+$break-small: 400px;
+
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  scroll-behavior: smooth;
+  font-family: $font-1;
+  color: $dark;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.nav-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100px;
+}
+
+.nav-link {
+  margin-left: 10px;
+}
+
+.nav-btn {
+  background: $prime;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 20px;
+  font-weight: 600;
+}
+
+.header-container {
+  width: 70%;
+  height: 30vh;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  margin-bottom: 100px;
+}
+
+.header-left {
+  width: 50%;
+
+  & img {
+    width: 100%;
+    object-fit: contain;
+  }
+}
+
+.header-right {
+  padding-left: 20px;
+  width: 50%;
+}
+
+.header-heading {
+  font-size: 4em;
+}
+
+.header-p {
+  font-size: 2em;
+}
+
+.options-container {
+  width: 80%;
+  margin: auto;
+  margin-bottom: 60px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 40px;
+
+  @media only screen and (max-width: $break-med) {
+    grid-template-columns: 1fr;
+  }
+
+  .option {
+    text-align: center;
+
+    .option-img {
+      margin-bottom: 10px;
+      color: $prime;
+    }
+
+    .option-heading {
+      margin-bottom: 20px;
+      color: $prime;
+      font-weight: 400;
+    }
+
+    .option-p {
+      color: $grey;
+      margin-bottom: 20px;
+    }
+  }
+}
+
+.footer-bar {
+  background: $prime;
+
+  & .footer-bar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.footer-content {
+  background: rgb(247, 243, 243);
+  color: grey;
+}
+
+.footer-content-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0;
+}
+
+.footer-section {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-heading {
+  margin-bottom: 20px;
+}

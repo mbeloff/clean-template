@@ -1,0 +1,137 @@
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
+
+body {
+  scroll-behavior: smooth;
+  font-family: "Source Sans Pro", sans-serif;
+  color: #502c37; }
+
+a {
+  text-decoration: none;
+  color: inherit; }
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto; }
+
+.nav-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 100px; }
+
+.nav-link {
+  margin-left: 10px; }
+
+.nav-btn {
+  background: #f86045;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 20px;
+  font-weight: 600; }
+
+.header-container {
+  width: 70%;
+  height: 30vh;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 100px; }
+
+.header-left {
+  width: 50%; }
+  .header-left img {
+    width: 100%;
+    -o-object-fit: contain;
+       object-fit: contain; }
+
+.header-right {
+  padding-left: 20px;
+  width: 50%; }
+
+.header-heading {
+  font-size: 4em; }
+
+.header-p {
+  font-size: 2em; }
+
+.options-container {
+  width: 80%;
+  margin: auto;
+  margin-bottom: 60px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 40px; }
+  @media only screen and (max-width: 768px) {
+    .options-container {
+      -ms-grid-columns: 1fr;
+          grid-template-columns: 1fr; } }
+  .options-container .option {
+    text-align: center; }
+    .options-container .option .option-img {
+      margin-bottom: 10px;
+      color: #f86045; }
+    .options-container .option .option-heading {
+      margin-bottom: 20px;
+      color: #f86045;
+      font-weight: 400; }
+    .options-container .option .option-p {
+      color: #a3999d;
+      margin-bottom: 20px; }
+
+.footer-bar {
+  background: #f86045; }
+  .footer-bar .footer-bar-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+
+.footer-content {
+  background: #f7f3f3;
+  color: grey; }
+
+.footer-content-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 20px 0; }
+
+.footer-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+
+.footer-heading {
+  margin-bottom: 20px; }
+/*# sourceMappingURL=styles.css.map */
