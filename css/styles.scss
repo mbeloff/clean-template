@@ -1,6 +1,6 @@
 $font-1: 'Source Sans Pro',
 sans-serif;
-$prime: #5aa1fd;
+$prime: #003f92;
 $dark: #2c3350;
 $grey: #999aa3;
 $break-med: 768px;
@@ -21,6 +21,22 @@ body {
   color: $dark;
 }
 
+.page-container {
+  position: relative;
+  min-height: 100vh;
+}
+
+.content-wrap {
+  padding-bottom: 180px;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 180px;
+}
+
 a {
   text-decoration: none;
   color: inherit;
@@ -30,6 +46,11 @@ a {
   width: 90%;
   max-width: 1200px;
   margin: auto;
+  min-height: 100%;
+
+  @media only screen and (max-width: $break-small) {
+    width: 95%;
+  }
 }
 
 .nav-container {
@@ -55,13 +76,32 @@ a {
   width: 70%;
   height: 30vh;
   margin: auto;
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto;
+  grid-template-areas:
+    "image heading"
+    "image sub";
   align-items: center;
   margin-bottom: 100px;
+
+  @media only screen and (max-width: $break-small) {
+    width: 100%;
+    grid-template-areas:
+      "image heading"
+      "sub sub"
+  }
 }
 
 .header-left {
-  width: 50%;
+  width: 100%;
+  max-width: 800px;
+  justify-self: right;
+  grid-area: image;
+
+  @media only screen and (max-width: $break-small) {
+    align-self: end;
+  }
 
   & img {
     width: 100%;
@@ -71,15 +111,35 @@ a {
 
 .header-right {
   padding-left: 20px;
-  width: 50%;
+  width: 100%;
 }
 
 .header-heading {
+  grid-area: heading;
+  align-self: end;
   font-size: 4em;
+
+  @media only screen and (max-width: $break-med) {
+    font-size: 3em;
+  }
+
+  @media only screen and (max-width: 580px) {
+    font-size: 2em;
+  }
 }
 
 .header-p {
+  align-self: start;
   font-size: 2em;
+  grid-area: sub;
+
+  @media only screen and (max-width: $break-med) {
+    align-self: flex-start;
+  }
+
+  @media only screen and (max-width: $break-small) {
+    justify-self: center;
+  }
 }
 
 .options-container {
@@ -114,6 +174,43 @@ a {
     }
   }
 }
+
+.content-h1 {
+  margin-bottom: 50px;
+}
+
+.article-grid {
+  display: grid;
+  grid-gap: 100px;
+  grid-template-columns: 1fr 200px;
+  margin-bottom: 1em;
+
+  @media only screen and (max-width: $break-med) {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+    grid-gap: 1em;
+  }
+}
+
+.article-img {
+  grid-column: 2/3;
+  width: 100%;
+  height: 200px;
+  background: $prime;
+
+  @media only screen and (max-width: $break-med) {
+    grid-column: 1/2;
+  }
+}
+
+.img-van {
+  background-image: url(../img/van.jpg);
+}
+
+.img-truck {
+  background-image: url(../img/)
+}
+
 
 .footer-bar {
   background: $prime;

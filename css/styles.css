@@ -11,6 +11,19 @@ body {
   font-family: "Source Sans Pro", sans-serif;
   color: #2c3350; }
 
+.page-container {
+  position: relative;
+  min-height: 100vh; }
+
+.content-wrap {
+  padding-bottom: 180px; }
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 180px; }
+
 a {
   text-decoration: none;
   color: inherit; }
@@ -18,7 +31,11 @@ a {
 .container {
   width: 90%;
   max-width: 1200px;
-  margin: auto; }
+  margin: auto;
+  min-height: 100%; }
+  @media only screen and (max-width: 400px) {
+    .container {
+      width: 95%; } }
 
 .nav-container {
   display: -webkit-box;
@@ -36,7 +53,7 @@ a {
   margin-left: 10px; }
 
 .nav-btn {
-  background: #5aa1fd;
+  background: #003f92;
   color: white;
   padding: 10px 20px;
   border-radius: 20px;
@@ -46,16 +63,36 @@ a {
   width: 70%;
   height: 30vh;
   margin: auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: auto auto;
+      grid-template-rows: auto auto;
+      grid-template-areas: "image heading" "image sub";
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   margin-bottom: 100px; }
+  @media only screen and (max-width: 400px) {
+    .header-container {
+      width: 100%;
+          grid-template-areas: "image heading" "sub sub"; } }
 
 .header-left {
-  width: 50%; }
+  width: 100%;
+  max-width: 800px;
+  -ms-grid-column-align: right;
+      justify-self: right;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 1;
+  grid-area: image; }
+  @media only screen and (max-width: 400px) {
+    .header-left {
+      -ms-flex-item-align: end;
+          -ms-grid-row-align: end;
+          align-self: end; } }
   .header-left img {
     width: 100%;
     -o-object-fit: contain;
@@ -63,13 +100,39 @@ a {
 
 .header-right {
   padding-left: 20px;
-  width: 50%; }
+  width: 100%; }
 
 .header-heading {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: heading;
+  -ms-flex-item-align: end;
+      -ms-grid-row-align: end;
+      align-self: end;
   font-size: 4em; }
+  @media only screen and (max-width: 768px) {
+    .header-heading {
+      font-size: 3em; } }
+  @media only screen and (max-width: 580px) {
+    .header-heading {
+      font-size: 2em; } }
 
 .header-p {
-  font-size: 2em; }
+  -ms-flex-item-align: start;
+      -ms-grid-row-align: start;
+      align-self: start;
+  font-size: 2em;
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: sub; }
+  @media only screen and (max-width: 768px) {
+    .header-p {
+      -ms-flex-item-align: start;
+          align-self: flex-start; } }
+  @media only screen and (max-width: 400px) {
+    .header-p {
+      -ms-grid-column-align: center;
+          justify-self: center; } }
 
 .options-container {
   width: 80%;
@@ -88,17 +151,54 @@ a {
     text-align: center; }
     .options-container .option .option-img {
       margin-bottom: 10px;
-      color: #5aa1fd; }
+      color: #003f92; }
     .options-container .option .option-heading {
       margin-bottom: 20px;
-      color: #5aa1fd;
+      color: #003f92;
       font-weight: 400; }
     .options-container .option .option-p {
       color: #999aa3;
       margin-bottom: 20px; }
 
+.content-h1 {
+  margin-bottom: 50px; }
+
+.article-grid {
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 100px;
+  -ms-grid-columns: 1fr 200px;
+      grid-template-columns: 1fr 200px;
+  margin-bottom: 1em; }
+  @media only screen and (max-width: 768px) {
+    .article-grid {
+      -ms-grid-columns: 1fr;
+          grid-template-columns: 1fr;
+      -ms-grid-rows: auto auto;
+          grid-template-rows: auto auto;
+      grid-gap: 1em; } }
+
+.article-img {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
+  width: 100%;
+  height: 200px;
+  background: #003f92; }
+  @media only screen and (max-width: 768px) {
+    .article-img {
+      -ms-grid-column: 1;
+      -ms-grid-column-span: 1;
+      grid-column: 1/2; } }
+
+.img-van {
+  background-image: url(../img/van.jpg); }
+
+.img-truck {
+  background-image: url(../img/); }
+
 .footer-bar {
-  background: #5aa1fd; }
+  background: #003f92; }
   .footer-bar .footer-bar-container {
     display: -webkit-box;
     display: -ms-flexbox;
