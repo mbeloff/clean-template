@@ -64,7 +64,7 @@ a {
 }
 
 .nav-left {
-  @media only screen and (max-width: $break-med){
+  @media only screen and (max-width: $break-small){
     display: none;
   }
 }
@@ -101,6 +101,7 @@ a {
 .header-container {
   width: 70%;
   height: 30vh;
+  min-height: max-content;
   margin: auto;
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -109,10 +110,14 @@ a {
     "image heading"
     "image sub";
   align-items: center;
-  margin-bottom: 100px;
+  margin-bottom: 60px;
+  @media only screen and (max-width: $break-med){
+    margin-bottom: 30px;
+  }
 
   @media only screen and (max-width: $break-small) {
     width: 100%;
+    margin-bottom: 20px;
     grid-template-areas:
       "image heading"
       "sub sub"
@@ -173,10 +178,16 @@ a {
   margin: auto;
   margin-bottom: 60px;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-gap: 40px;
 
   @media only screen and (max-width: $break-med) {
+    width: 95%;
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 10px;
+    grid-gap: 20px;
+  }
+  @media only screen and (max-width: $break-small) {
     grid-template-columns: 1fr;
   }
 
@@ -192,11 +203,15 @@ a {
       margin-bottom: 20px;
       color: $prime;
       font-weight: 400;
+      @media only screen and (max-width: $break-med) {
+        margin-bottom: 10px;
+      }
     }
 
     .option-p {
       color: $grey;
       margin-bottom: 20px;
+      font-size: .8em;
     }
   }
 }

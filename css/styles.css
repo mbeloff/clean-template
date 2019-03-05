@@ -54,7 +54,7 @@ a {
           -ms-flex-pack: end;
               justify-content: flex-end; } }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 400px) {
   .nav-left {
     display: none; } }
 
@@ -85,6 +85,9 @@ a {
 .header-container {
   width: 70%;
   height: 30vh;
+  min-height: -webkit-max-content;
+  min-height: -moz-max-content;
+  min-height: max-content;
   margin: auto;
   display: -ms-grid;
   display: grid;
@@ -96,10 +99,14 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-bottom: 100px; }
+  margin-bottom: 60px; }
+  @media only screen and (max-width: 768px) {
+    .header-container {
+      margin-bottom: 30px; } }
   @media only screen and (max-width: 400px) {
     .header-container {
       width: 100%;
+      margin-bottom: 20px;
           grid-template-areas: "image heading" "sub sub"; } }
 
 .header-left {
@@ -163,10 +170,17 @@ a {
   margin-bottom: 60px;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 1fr 1fr;
-      grid-template-columns: 1fr 1fr 1fr;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-gap: 40px; }
   @media only screen and (max-width: 768px) {
+    .options-container {
+      width: 95%;
+      -ms-grid-columns: 1fr 1fr;
+          grid-template-columns: 1fr 1fr;
+      margin-bottom: 10px;
+      grid-gap: 20px; } }
+  @media only screen and (max-width: 400px) {
     .options-container {
       -ms-grid-columns: 1fr;
           grid-template-columns: 1fr; } }
@@ -179,9 +193,13 @@ a {
       margin-bottom: 20px;
       color: #a70d48;
       font-weight: 400; }
+      @media only screen and (max-width: 768px) {
+        .options-container .option .option-heading {
+          margin-bottom: 10px; } }
     .options-container .option .option-p {
       color: #999aa3;
-      margin-bottom: 20px; }
+      margin-bottom: 20px;
+      font-size: .8em; }
 
 .banner {
   height: 200px;
