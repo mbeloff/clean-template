@@ -1,6 +1,6 @@
 $font-1: 'Source Sans Pro',
 sans-serif;
-$prime: #003f92;
+$prime: #a70d48;
 $dark: #2c3350;
 $grey: #999aa3;
 $break-med: 768px;
@@ -58,10 +58,33 @@ a {
   align-items: center;
   justify-content: space-between;
   height: 100px;
+  @media only screen and (max-width: $break-small) {
+    justify-content: flex-end;
+  }
+}
+
+.nav-left {
+  @media only screen and (max-width: $break-med){
+    display: none;
+  }
+}
+
+.nav-right {
+  @media only screen and (max-width: $break-med){
+    font-size: .8em;
+  }
 }
 
 .nav-link {
   margin-left: 10px;
+  @media only screen and (max-width: $break-med){
+    margin-left: 5px;
+  }
+}
+
+.bold-link {
+  font-weight: 800;
+  color: $prime;
 }
 
 .nav-btn {
@@ -70,6 +93,9 @@ a {
   padding: 10px 20px;
   border-radius: 20px;
   font-weight: 600;
+  @media only screen and (max-width: $break-med){
+    padding: 5px 10px;
+  }
 }
 
 .header-container {
@@ -175,6 +201,24 @@ a {
   }
 }
 
+.banner {
+  height: 200px;
+  background: $prime;
+  width: 100%;
+  margin-bottom: 2em;
+  position: relative;
+}
+
+.banner-img {
+  width: 80%;
+  max-width: 1200px;
+  height: 100%;
+  margin: auto;
+  background-position: center center;
+  background-size: cover;
+  background-image: url(../img/driving-2.jpg);
+}
+
 .content-h1 {
   margin-bottom: 50px;
 }
@@ -197,23 +241,67 @@ a {
   width: 100%;
   height: 200px;
   background: $prime;
-
+  background-size: cover;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.219);
+  
   @media only screen and (max-width: $break-med) {
     grid-column: 1/2;
+    max-width: 300px;
+    justify-self: center;
+  }
+}
+
+.img-banner {
+  font-family: impact;
+  font-style: italic;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 150%;
+  height: 1.5em;
+  background: $prime;
+  position: absolute;
+  bottom: 11%;
+  right: -30%;
+  color: white;
+  font-size: 3em;
+  transform: rotate(-30deg);
+  box-shadow: 0px 0px 0px 5px white;
+  @media only screen and (max-width: $break-med){
+    transform: rotate(-37deg);
+    right: -50%;
+    font-size: 3.5em
+  }
+}
+
+.banner-text {
+  span {
+    font-size: .5em;
   }
 }
 
 .img-van {
-  background-image: url(../img/van.jpg);
+  background-image: url(../img/van-side.jpg);
+
 }
 
 .img-truck {
-  background-image: url(../img/)
+  background-image: url(../img/truck-3q.jpg);
 }
+
+.img-cold {
+  background-image: url(../img/ute-cold.jpg)
+}
+
+
 
 
 .footer-bar {
   background: $prime;
+  height: 40px;
+  
 
   & .footer-bar-container {
     display: flex;
@@ -236,6 +324,10 @@ a {
 .footer-section {
   display: flex;
   flex-direction: column;
+  padding: 10px;
+  @media only screen and (max-width: $break-small){
+    font-size: .8em;
+  }
 }
 
 .footer-heading {
