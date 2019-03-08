@@ -1,0 +1,40 @@
+
+
+$font-1: 'Source Sans Pro',
+sans-serif;
+$prime: #a70d48;
+$dark: #2c3350;
+$grey: #999aa3;
+$break-med: 768px;
+$break-small: 400px;
+$shadow: 1px 1px 10px rgba(0, 0, 0, 0.164);
+
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  scroll-behavior: smooth;
+  font-family: $font-1;
+  color: $dark;
+}
+
+.page-container {
+  position: relative;
+  min-height: 100vh;
+}
+
+.content-wrap {
+  padding-bottom: 180px;
+}
+
+.booking-container {
+  height: 100px;
+  width: 100px;
+  background: $prime;
+}
