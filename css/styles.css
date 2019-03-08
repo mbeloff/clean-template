@@ -99,6 +99,24 @@ body {
     .btn {
       padding: 5px 10px; } }
 
+.services-item-1 {
+  background: url(../img/truck-3q.jpg); }
+
+.services-item-2 {
+  background: url(../img/van-back.jpg); }
+
+.services-item-3 {
+  background: url(../img/van-junk.jpg); }
+
+.services-item-4 {
+  background: url(../img/van-interior.jpg); }
+
+.services-item-5 {
+  background: url(../img/driving-2.jpg); }
+
+.services-item-6 {
+  background: url(../img/van-men.jpg); }
+
 .footer {
   position: absolute;
   bottom: 0;
@@ -277,7 +295,8 @@ a {
       grid-template-areas: "content sidegrid";
   -ms-grid-columns: 3fr 2fr;
       grid-template-columns: 3fr 2fr;
-  grid-gap: 2em; }
+  grid-gap: 2em;
+  margin-bottom: 1em; }
   @media only screen and (max-width: 768px) {
     .main {
           grid-template-areas: "content" "sidegrid";
@@ -442,15 +461,31 @@ a {
       -ms-flex: 1;
           flex: 1;
   height: 100px;
-  background: #a70d48;
-  background-image: url(../img/van-side-open.jpg);
   background-size: cover;
-  margin-bottom: 5px; }
+  background-position: center;
+  -webkit-box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.096);
+          box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.096); }
 
 .service-img-overlay {
-  background: rgba(179, 17, 66, 0.596);
+  color: #2c3350;
   height: 100%;
-  color: white; }
+  background: rgba(247, 230, 236, 0.815);
+  -webkit-transition: background 500ms ease;
+  transition: background 500ms ease; }
+  .service-img-overlay:hover {
+    background: rgba(255, 244, 248, 0.952); }
+
+.overlay-heading {
+  margin-bottom: 10px;
+  color: white;
+  padding: 7px;
+  font-weight: 800;
+  background: #a70d48; }
+
+.overlay-p {
+  display: none;
+  padding-left: 10px;
+  font-size: 1.2em; }
 
 .footer-bar {
   background: #a70d48;

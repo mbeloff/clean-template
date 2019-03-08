@@ -1,5 +1,6 @@
 @import "_base.scss";
 @import "_vehicles.scss";
+@import "_images.scss";
 
 .footer {
   position: absolute;
@@ -171,6 +172,7 @@ a {
   "content sidegrid";
   grid-template-columns: 3fr 2fr;
   grid-gap: 2em;
+  margin-bottom: 1em;
   @media only screen and (max-width: $break-med){
     grid-template-areas:
     "content"
@@ -333,16 +335,37 @@ a {
 .service-img {
   flex: 1;
   height: 100px;
-  background: $prime;
-  background-image: url(../img/van-side-open.jpg);
   background-size: cover;
-  margin-bottom: 5px;
+  background-position: center;
+  // margin-bottom: 5px;
+  box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.096);
+  
+  // border-radius: 5px;
 }
 
 .service-img-overlay {
-  background: rgba(179, 17, 66, 0.596);
+    color: $dark;
   height: 100%;
+  background: rgba(247, 230, 236, 0.815);
+  &:hover {
+    background: rgba(255, 244, 248, 0.952);
+  }
+  transition: background 500ms ease;
+}
+
+.overlay-heading {
+  margin-bottom: 10px;
   color: white;
+  padding: 7px;
+  // font-family: arial;
+  font-weight: 800;
+  background: $prime;
+}
+
+.overlay-p {
+  display: none;
+  padding-left: 10px;
+  font-size: 1.2em;
 }
 
 
