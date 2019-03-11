@@ -21,17 +21,19 @@
         </div>
         <div class="nav-right">
           <a href="#" class="nav-link">About Us</a>
-          <a href="#" class="nav-link nav-droplink">Services
+          <div class="nav-droplink" style="position: relative">
+            <a href="#" class="nav-link">Services</a>
             <div class="dropdown">
               <ul>
-                <li>Van Rental</li>
-                <li>Truck Rental</li>
-                <li>Furniture removals</li>
-                <li>Rubbish removals</li>
-                <li>Vehicle Dropoff</li>
+                <li><a class="nav-link" href="#services">Van Rental</a></li>
+                <li><a class="nav-link" href="#services">Truck Rental</a></li>
+                <li><a class="nav-link" href="#services">Furniture removals</a></li>
+                <li><a class="nav-link" href="#services">Rubbish removals</a></li>
+                <li><a class="nav-link" href="#services">Vehicle Dropoff</a></li>
               </ul>
             </div>
-          </a>
+          </div>
+
           <a href="#" class="nav-link bold-link">Call: 1800-123-123</a>
           <a href="#" class="nav-btn nav-link">Book Now</a>
         </div>
@@ -39,6 +41,13 @@
     </nav>
     <div class="content-wrap">
       <main>
+        <section class="booking-section">
+          <div class="booking-module">
+            <form action="" class="booking-form">
+
+            </form>
+          </div>
+        </section>
         <div class="header-container">
           <div class="header-left"><img src="img/van.jpg" alt=""></div>
           <h1 class="header-heading">Get That Furniture Out</h1>
@@ -79,7 +88,7 @@
           <div class="banner-img"></div>
         </div>
 
-        <div class="container main">
+        <div class="container main" id="services">
 
 
           <div class="content-article">
@@ -88,8 +97,8 @@
               <div class="article-text">
                 <h2 class="article-h1">Vans</h2>
                 <p class="article-p">Our extra tall vans make it easy to load and transport your large or small items.
-                  Great for small moves, or getting rid of that old couch or fridge you've had laying around. Easier
-                  than driving with a box trailer.</p>
+                  Great for small moves, or getting rid of that old couch or fridge you've had laying around. <br><br>
+                  blah blah blah</p>
               </div>
               <div class="article-img img-van">
                 <div class="img-banner">
@@ -101,7 +110,7 @@
               <div class="article-text">
                 <h2 class="article-h1">Trucks</h2>
                 <p class="article-p">Need a bit more room? Move anything with one of our trucks. Great for moving
-                  house, -storage capacity -features -blah blah blah.</p>
+                  house, -storage capacity -features <br><br> blah blah blah</p>
               </div>
               <div class="article-img img-truck">
                 <div class="img-banner">
@@ -113,11 +122,11 @@
               <div class="article-text">
                 <h2 class="article-h1">Vehicle Delivery and Pick-up</h2>
                 <p class="article-p">We can drop-off and pick-up our vans and trucks, load and unload, and can even
-                  take your stuff to the tip for you.</p>
+                  take your stuff to the tip for you. <br> <br> blah blah blah</p>
               </div>
               <div class="article-img img-van-open">
                 <div class="img-banner">
-                  <p class="banner-text"><span>from</span>$20<span>/hr*</span></p>
+                  <p class="banner-text"><span>from</span>$20<span></span></p>
                 </div>
               </div>
             </div>
@@ -150,22 +159,15 @@
 
             <div class="service-img services-item-4">
               <div class="service-img-overlay">
-                <h2 class="overlay-heading">We come to you</h2>
-                <p class="overlay-p">We can bring the vehicle to your driveway, and pick it up when you're done.</p>
+                <h2 class="overlay-heading">Rubbish removal</h2>
+                <p class="overlay-p">..</p>
               </div>
             </div>
 
             <div class="service-img services-item-5">
               <div class="service-img-overlay">
-                <h2 class="overlay-heading">something else</h2>
-                <p class="overlay-p">...</p>
-              </div>
-            </div>
-
-            <div class="service-img services-item-6">
-              <div class="service-img-overlay">
-                <h2 class="overlay-heading">something else</h2>
-                <p class="overlay-p">...</p>
+                <h2 class="overlay-heading">We come to you</h2>
+                <p class="overlay-p">We can bring the vehicle to your driveway, and pick it up when you're done.</p>
               </div>
             </div>
           </div>
@@ -173,6 +175,12 @@
 
 
         </div>
+        <button class="booking-btn">
+          Get a quote!
+        </button>
+
+
+
       </main>
       <section class="map-section">
         <div class="container">

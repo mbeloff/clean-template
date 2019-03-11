@@ -48,10 +48,18 @@ a {
 
 .nav-link {
   margin-left: 10px;
+  &:hover {
+    color: $prime;
+  }
   @media only screen and (max-width: $break-med){
     margin-left: 5px;
     font-size: .8em;
   }
+}
+
+.nav-right {
+  display: flex;
+  align-items: center;
 }
 
 .nav-droplink {
@@ -59,17 +67,21 @@ a {
 }
 
 .dropdown {
-  display: none;
+ display: none;
  position: absolute;
- left: -25%;
+ left: -15px;
  top: 1.2em;
- width: 150px;
+ width: 175px;
+ line-height: 1.4em;
  background: white;
  padding: 10px 15px;;
  border-radius: 2px;
  box-shadow: $shadow;
  ul {
    list-style: none;
+ }
+ a {
+  font-weight: 600;
  }
 }
 
@@ -84,6 +96,11 @@ a {
   padding: 10px 20px;
   border-radius: 20px;
   font-weight: 600;
+  border: 1px solid $prime;
+  &:hover {
+    background: white;
+    
+  }
   @media only screen and (max-width: $break-med){
     padding: 5px 10px;
   }
@@ -119,7 +136,7 @@ a {
   width: 100%;
   max-width: 800px;
   justify-self: right;
-  grid-area: image;
+  grid-area: "image";
 
   @media only screen and (max-width: $break-small) {
     align-self: end;
@@ -137,7 +154,7 @@ a {
 }
 
 .header-heading {
-  grid-area: heading;
+  grid-area: "heading";
   grid-row: 1/2;
   grid-column: 2/3;
   align-self: end;
@@ -155,7 +172,7 @@ a {
 .header-p {
   align-self: start;
   font-size: 2em;
-  grid-area: sub;
+  grid-area: "sub";
 
   @media only screen and (max-width: $break-med) {
     align-self: flex-start;
@@ -182,7 +199,7 @@ a {
 }
 
 .content-article {
-  grid-area: content;
+  grid-area: "content";
   width: 100%;
 }
 
@@ -224,7 +241,7 @@ a {
     .option-p {
       color: $grey;
       margin-bottom: 20px;
-      font-size: .8em;
+      font-size: .9em;
     }
   }
 }
@@ -346,27 +363,45 @@ a {
 
 .service-img-overlay {
     color: white;
+    overflow: hidden;
   height: 100%;
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.2);
   &:hover {
     background: rgba(0, 0, 0, 0.8);
   }
   transition: background 500ms ease;
 }
 
-.overlay-heading {
+.overlay-heading { 
   margin-bottom: 10px;
   color: white;
   padding: 7px;
   font-family: arial;
   font-weight: 800;
   background: $prime;
+  
 }
 
 .overlay-p {
   display: none;
   padding: 20px;
   font-size: 1em;
+}
+
+.booking-btn {
+  background: $prime;
+  color: white;
+  padding: 20px 30px;
+  border-radius: 30px;
+  font-weight: 600;
+  border: 1px solid $prime;
+  &:hover {
+    background: white;
+    color: $prime;
+  }
+  @media only screen and (max-width: $break-med){
+    padding: 5px 10px;
+  }
 }
 
 //map section
@@ -423,6 +458,10 @@ a {
   display: flex;
   justify-content: space-between;
   padding: 20px 0;
+}
+
+.footer-link {
+  color: rgb(32, 83, 250);
 }
 
 .footer-section {
