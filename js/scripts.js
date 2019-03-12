@@ -28,8 +28,6 @@ $(".show-booking").click(function (){
 })
 
 
-
-
 //scroll to section
 jQuery(function ($) {
   $('a[href*="#"]:not([href="#"])').click(function (e) {

@@ -15,17 +15,6 @@ a {
   color: inherit;
 }
 
-.container {
-  width: 90%;
-  max-width: 1200px;
-  margin: auto;
-  min-height: 100%;
-
-  @media only screen and (max-width: $break-small) {
-    width: 95%;
-  }
-}
-
 .nav-container {
   display: flex;
   align-items: center;

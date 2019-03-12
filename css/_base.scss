@@ -33,3 +33,28 @@ body {
   padding-bottom: 180px;
 }
 
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+  min-height: 100%;
+
+  @media only screen and (max-width: $break-small) {
+    width: 95%;
+  }
+}
+
+.btn {
+  align-self: flex-end;
+  background: $prime;
+  max-width: 200px;
+  text-align: center;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 20px;
+  font-weight: 600;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.308);
+  @media only screen and (max-width: $break-med){
+    padding: 5px 10px;
+  }
+}
