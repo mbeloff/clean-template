@@ -1,6 +1,7 @@
 @import "_base.scss";
 @import "_vehicles.scss";
 @import "_images.scss";
+@import "_booking.scss";
 
 .footer {
   position: absolute;
@@ -136,7 +137,7 @@ a {
   width: 100%;
   max-width: 800px;
   justify-self: right;
-  grid-area: "image";
+  grid-area: image;
 
   @media only screen and (max-width: $break-small) {
     align-self: end;
@@ -154,7 +155,7 @@ a {
 }
 
 .header-heading {
-  grid-area: "heading";
+  grid-area: heading;
   grid-row: 1/2;
   grid-column: 2/3;
   align-self: end;
@@ -172,7 +173,7 @@ a {
 .header-p {
   align-self: start;
   font-size: 2em;
-  grid-area: "sub";
+  grid-area: sub;
 
   @media only screen and (max-width: $break-med) {
     align-self: flex-start;
@@ -199,7 +200,7 @@ a {
 }
 
 .content-article {
-  grid-area: "content";
+  grid-area: content;
   width: 100%;
 }
 
@@ -388,7 +389,14 @@ a {
   font-size: 1em;
 }
 
+.booking-btn-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
 .booking-btn {
+  margin-bottom: 25px;
   background: $prime;
   color: white;
   padding: 20px 30px;
@@ -398,9 +406,6 @@ a {
   &:hover {
     background: white;
     color: $prime;
-  }
-  @media only screen and (max-width: $break-med){
-    padding: 5px 10px;
   }
 }
 

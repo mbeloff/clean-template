@@ -15,6 +15,22 @@ $(".service-img-overlay").mouseleave(function () {
 })
 
 
+//booking show
+$(".show-booking").click(function (){
+  if(!$(".booking-container").is(":visible")) {
+     $(".booking-container").slideDown();
+     $('html, body').animate({
+      scrollTop: ($('#booking-section').offset().top - 20)
+  },500);
+  } else {
+    $(".booking-container").slideUp();
+  }    
+})
+
+
+
+
+//scroll to section
 jQuery(function ($) {
   $('a[href*="#"]:not([href="#"])').click(function (e) {
     if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') || location.hostname == this.hostname) {
