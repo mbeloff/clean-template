@@ -43,6 +43,67 @@ body {
     .btn {
       padding: 5px 10px; } }
 
+.vehicle-container {
+  margin-bottom: 50px;
+  border-radius: 10px;
+  -webkit-box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.164);
+          box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.164); }
+
+.vehicle-heading {
+  font-size: 3em;
+  margin-bottom: 20px;
+  padding: 20px; }
+
+.vehicle-img-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 200px; }
+  @media only screen and (max-width: 768px) {
+    .vehicle-img-container {
+      height: 150px; } }
+  @media only screen and (max-width: 400px) {
+    .vehicle-img-container {
+      height: 100px; } }
+
+.vehicle-img {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 30%;
+          flex: 1 1 30%;
+  background-size: cover;
+  background-position: center; }
+
+.vehicle-content {
+  font-size: 1.5em; }
+
+.details {
+  list-style: none;
+  -webkit-columns: 2;
+          columns: 2;
+  padding: 20px; }
+  @media only screen and (max-width: 768px) {
+    .details {
+      -webkit-columns: 1;
+              columns: 1; } }
+
+.details-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  line-height: 1.5em; }
+  @media only screen and (max-width: 768px) {
+    .details-item {
+      font-size: .8em; } }
+  .details-item svg {
+    width: 28px;
+    height: 28px;
+    color: #a70d48;
+    padding: 0 10px;
+    font-size: 2em; }
+
 .services-item-1 {
   background: url(../img/van-interior.jpg); }
 
@@ -53,13 +114,22 @@ body {
   background: url(../img/driving.jpg); }
 
 .services-item-4 {
-  background: url(../img/van-junk.jpg); }
+  background: url(../img/van-junk-r.jpg); }
 
 .services-item-5 {
-  background: url(../img/van-out-window.jpg); }
+  background: url(../img/van-out-window-r.jpg); }
 
 .services-item-6 {
   background: url(../img/van-junk.jpg); }
+
+.van-1 {
+  background-image: url(../img/van-side-open.jpg); }
+
+.van-2 {
+  background-image: url(../img/van-interior.jpg); }
+
+.van-3 {
+  background-image: url(../img/van-back.jpg); }
 
 .booking-form {
   max-width: 642px;
@@ -292,7 +362,8 @@ a {
       grid-template-columns: 1fr 1fr;
   -ms-grid-rows: auto auto;
       grid-template-rows: auto auto;
-      grid-template-areas: "image heading" "image sub";
+      grid-template-areas: "image heading"
+ "image sub";
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -304,7 +375,8 @@ a {
     .header-container {
       width: 100%;
       margin-bottom: 20px;
-          grid-template-areas: "image heading" "sub sub"; } }
+          grid-template-areas: "image heading"
+ "sub sub"; } }
 
 .header-left {
   width: 100%;
@@ -377,7 +449,8 @@ a {
   margin-bottom: 1em; }
   @media only screen and (max-width: 768px) {
     .main {
-          grid-template-areas: "content" "sidegrid";
+          grid-template-areas: "content"
+ "sidegrid";
       -ms-grid-columns: 1fr;
           grid-template-columns: 1fr; } }
 
@@ -561,7 +634,19 @@ a {
   padding: 7px;
   font-family: arial;
   font-weight: 800;
-  background: #a70d48; }
+  background: #a70d48;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  .overlay-heading i {
+    color: #ffd415;
+    margin-right: 5px; }
 
 .overlay-p {
   display: none;

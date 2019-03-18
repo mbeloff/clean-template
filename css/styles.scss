@@ -362,6 +362,8 @@ a {
   transition: background 500ms ease;
 }
 
+
+
 .overlay-heading { 
   margin-bottom: 10px;
   color: white;
@@ -369,7 +371,13 @@ a {
   font-family: arial;
   font-weight: 800;
   background: $prime;
-  
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  i {
+    color: rgb(255, 212, 21);
+    margin-right: 5px;
+  }
 }
 
 .overlay-p {
