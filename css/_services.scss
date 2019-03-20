@@ -11,11 +11,34 @@
 
 .services-left {
   grid-column: 1/2;
+  margin-right: 50px;
 }
 
 .services-right {
   grid-column: 2/3;
+  display: flex;
+  flex-direction: column;
+  box-shadow: $shadow;
+  border-radius: 13px;
+  padding: 50px;
+  .perk-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-top: 1px solid #ce3636;
+    flex: 1;
+    text-align: left;
+    .perk-text {
+      margin-left: 20px;
+    }
+    i {
+      color: $prime;
+    }    
+  }
+}
 
+.perk-container:nth-child(-n+1) {
+  border-top: none;
 }
 
 .services-intro {
@@ -23,9 +46,26 @@
   font-weight: 600;
 }
 
+.service-details {
+  & ul {
+    columns: 2;
+    margin-bottom: 20px;
+    list-style: none;
+    line-height: 1.5em;
+    & li {
+      margin-left: 20px;
+      font-weight: 600;
+      .fas {
+        color: #ffc001;
+      }
+    }
+  }
+}
+
 .service-heading {
   margin-bottom: 15px;
   color: $prime;
+  font-size: 2em;
   & span {
     color: $dark;
   };
