@@ -17,10 +17,11 @@
 .services-right {
   grid-column: 2/3;
   display: flex;
+  max-height: 800px;
   flex-direction: column;
   box-shadow: $shadow;
   border-radius: 13px;
-  padding: 50px;
+  padding: 40px;
   .perk-container {
     display: flex;
     flex-direction: row;

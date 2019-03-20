@@ -344,6 +344,7 @@ select::-ms-expand {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  max-height: 800px;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -351,7 +352,7 @@ select::-ms-expand {
   -webkit-box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.164);
           box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.164);
   border-radius: 13px;
-  padding: 50px; }
+  padding: 40px; }
   .services-right .perk-container {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -653,7 +654,7 @@ a {
   position: relative; }
 
 .section-heading {
-  font-size: 2em;
+  font-size: 3em;
   margin-bottom: 50px; }
   @media only screen and (max-width: 768px) {
     .section-heading {
