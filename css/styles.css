@@ -131,6 +131,20 @@ body {
 .van-3 {
   background-image: url(../img/van-back.jpg); }
 
+.services-banner-img {
+  background-image: url(../img/driving.jpg); }
+
+.home-banner-img {
+  background-image: url(../img/driving-2.jpg); }
+
+.banner-img {
+  width: 90%;
+  max-width: 1200px;
+  height: 100%;
+  margin: auto;
+  background-position: center center;
+  background-size: cover; }
+
 .booking-form {
   max-width: 642px;
   width: 100%;
@@ -258,6 +272,88 @@ body {
   -ms-flex-pack: distribute;
       justify-content: space-around; }
 
+.selectdiv {
+  position: relative;
+  /*Don't really need this just for demo styling*/
+  float: left;
+  min-width: 200px;
+  margin: 50px 33%; }
+
+.selectdiv:after {
+  content: '\f078';
+  font: normal normal normal 17px/1 FontAwesome;
+  color: #0ebeff;
+  right: 11px;
+  top: 6px;
+  height: 34px;
+  padding: 15px 0px 0px 8px;
+  border-left: 1px solid #0ebeff;
+  position: absolute;
+  pointer-events: none; }
+
+/* IE11 hide native button (thanks Matt!) */
+select::-ms-expand {
+  display: none; }
+
+.selectdiv select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  /* Add some styling */
+  display: block;
+  width: 100%;
+  max-width: 320px;
+  height: 50px;
+  float: right;
+  margin: 5px 0px;
+  padding: 0px 24px;
+  font-size: 16px;
+  line-height: 1.75;
+  color: #333;
+  background-color: #ffffff;
+  background-image: none;
+  border: 1px solid #0ebeff;
+  -ms-word-break: normal;
+  word-break: normal; }
+
+.services-section {
+  margin-bottom: 50px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 2fr 1fr;
+      grid-template-columns: 2fr 1fr;
+  -ms-grid-rows: auto;
+      grid-template-rows: auto; }
+  @media only screen and (max-width: 768px) {
+    .services-section {
+      -ms-grid-columns: auto;
+          grid-template-columns: auto;
+      -ms-grid-rows: auto auto;
+          grid-template-rows: auto auto; } }
+
+.services-left {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1/2; }
+
+.services-right {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3; }
+
+.services-intro {
+  margin-bottom: 25px;
+  font-weight: 600; }
+
+.service-heading {
+  margin-bottom: 15px;
+  color: #a70d48; }
+  .service-heading span {
+    color: #2c3350; }
+
+.service-p {
+  margin-bottom: 25px; }
+
 .footer {
   position: absolute;
   bottom: 0;
@@ -285,9 +381,12 @@ a {
           -ms-flex-pack: end;
               justify-content: flex-end; } }
 
-@media only screen and (max-width: 400px) {
-  .nav-left {
-    display: none; } }
+.nav-left {
+  font-weight: 600;
+  font-size: 2.5em; }
+  @media only screen and (max-width: 400px) {
+    .nav-left {
+      display: none; } }
 
 .nav-list {
   list-style: none;
@@ -336,17 +435,17 @@ a {
   font-weight: 800;
   color: #a70d48; }
 
-.nav-btn {
+.nav-booking-btn {
   background: #a70d48;
   color: white;
   padding: 10px 20px;
   border-radius: 20px;
   font-weight: 600;
   border: 1px solid #a70d48; }
-  .nav-btn:hover {
+  .nav-booking-btn:hover {
     background: white; }
   @media only screen and (max-width: 768px) {
-    .nav-btn {
+    .nav-booking-btn {
       padding: 5px 10px; } }
 
 .header-container {
@@ -362,8 +461,7 @@ a {
       grid-template-columns: 1fr 1fr;
   -ms-grid-rows: auto auto;
       grid-template-rows: auto auto;
-      grid-template-areas: "image heading"
- "image sub";
+      grid-template-areas: "image heading" "image sub";
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -375,8 +473,7 @@ a {
     .header-container {
       width: 100%;
       margin-bottom: 20px;
-          grid-template-areas: "image heading"
- "sub sub"; } }
+          grid-template-areas: "image heading" "sub sub"; } }
 
 .header-left {
   width: 100%;
@@ -449,8 +546,7 @@ a {
   margin-bottom: 1em; }
   @media only screen and (max-width: 768px) {
     .main {
-          grid-template-areas: "content"
- "sidegrid";
+          grid-template-areas: "content" "sidegrid";
       -ms-grid-columns: 1fr;
           grid-template-columns: 1fr; } }
 
@@ -459,6 +555,14 @@ a {
   -ms-grid-column: 1;
   grid-area: content;
   width: 100%; }
+
+.article-disclaimer {
+  color: #a70d48;
+  text-align: right;
+  font-size: 0.75em; }
+  @media only screen and (max-width: 768px) {
+    .article-disclaimer {
+      text-align: left; } }
 
 .options-container {
   width: 80%;
@@ -500,17 +604,12 @@ a {
   margin-bottom: 2em;
   position: relative; }
 
-.banner-img {
-  width: 80%;
-  max-width: 1200px;
-  height: 100%;
-  margin: auto;
-  background-position: center center;
-  background-size: cover;
-  background-image: url(../img/driving-2.jpg); }
-
-.content-h1 {
-  margin-bottom: 100px; }
+.section-heading {
+  font-size: 2em;
+  margin-bottom: 50px; }
+  @media only screen and (max-width: 768px) {
+    .section-heading {
+      margin-bottom: 50px; } }
 
 .article-grid {
   display: -ms-grid;
@@ -545,6 +644,7 @@ a {
       -ms-grid-column: 1;
       -ms-grid-column-span: 1;
       grid-column: 1/2;
+      margin-right: auto;
       max-width: 300px;
       -ms-grid-column-align: center;
           justify-self: center; } }

@@ -8,10 +8,10 @@
   background: url(../img/driving.jpg);
 }
 .services-item-4 {
-  background: url(../img/van-junk.jpg);
+  background: url(../img/van-junk-r.jpg);
 }
 .services-item-5 {
-  background: url(../img/van-out-window.jpg);
+  background: url(../img/van-out-window-r.jpg);
 }
 .services-item-6 {
   background: url(../img/van-junk.jpg);
@@ -27,4 +27,21 @@
 
 .van-3 {
   background-image: url(../img/van-back.jpg);
+}
+
+.services-banner-img {
+  background-image: url(../img/driving.jpg);
+}
+
+.home-banner-img {
+  background-image: url(../img/driving-2.jpg);
+}
+
+.banner-img {
+  width: 90%;
+  max-width: 1200px;
+  height: 100%;
+  margin: auto;
+  background-position: center center;
+  background-size: cover;
 }

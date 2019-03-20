@@ -1,0 +1,36 @@
+.services-section {
+  margin-bottom: 50px;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: auto;
+  @media only screen and (max-width: $break-med){
+    grid-template-columns: auto;
+    grid-template-rows: auto auto;
+  }
+}
+
+.services-left {
+  grid-column: 1/2;
+}
+
+.services-right {
+  grid-column: 2/3;
+
+}
+
+.services-intro {
+  margin-bottom: 25px;
+  font-weight: 600;
+}
+
+.service-heading {
+  margin-bottom: 15px;
+  color: $prime;
+  & span {
+    color: $dark;
+  };
+}
+
+.service-p {
+  margin-bottom: 25px;
+}

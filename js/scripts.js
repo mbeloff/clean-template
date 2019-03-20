@@ -6,25 +6,35 @@ $(".nav-droplink").mouseleave(function () {
 })
 
 $(".service-img-overlay").hover(function () {
-  $(this).children(".overlay-p").slideDown(200);
-  $(this).children(".overlay-heading").slideUp(200);
+  $(this).children(".overlay-p").stop().slideDown(200);
+  $(this).children(".overlay-heading").stop().slideUp(200);
 })
 $(".service-img-overlay").mouseleave(function () {
-  $(this).children(".overlay-p").slideUp(100);
-  $(this).children(".overlay-heading").slideDown(200);
+  $(this).children(".overlay-p").stop().slideUp(100);
+  $(this).children(".overlay-heading").stop().slideDown(200);
 })
 
 
 //booking show
-$(".show-booking").click(function (){
-  if(!$(".booking-container").is(":visible")) {
-     $(".booking-container").slideDown();
-     $('html, body').animate({
+$(".show-booking").click(function () {
+  if (!$(".booking-container").is(":visible")) {
+    $(".booking-container").slideDown();
+    $(".booking-btn").text("close");
+    $('html, body').animate({
       scrollTop: ($('#booking-section').offset().top - 20)
-  },500);
+    }, 500);
   } else {
     $(".booking-container").slideUp();
-  }    
+    $(".booking-btn").text("Get a Quote");
+  }
+})
+
+$(".nav-booking-btn").click(function () {
+  $(".booking-container").slideDown();
+  $(".booking-btn").text("close");
+  $('html, body').animate({
+    scrollTop: ($('#booking-section').offset().top - 20)
+  }, 500);
 })
 
 
@@ -56,4 +66,3 @@ jQuery(document).ready(function ($) {
     }, 750);
   }
 });
-

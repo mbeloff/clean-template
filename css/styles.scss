@@ -2,6 +2,7 @@
 @import "_vehicles.scss";
 @import "_images.scss";
 @import "_booking.scss";
+@import "_services.scss";
 
 .footer {
   position: absolute;
@@ -26,6 +27,8 @@ a {
 }
 
 .nav-left {
+  font-weight: 600;
+  font-size: 2.5em;
   @media only screen and (max-width: $break-small){
     display: none;
   }
@@ -80,7 +83,7 @@ a {
   color: $prime;
 }
 
-.nav-btn {
+.nav-booking-btn {
   background: $prime;
   color: white;
   padding: 10px 20px;
@@ -193,6 +196,15 @@ a {
   width: 100%;
 }
 
+.article-disclaimer {
+  color: $prime;
+  text-align: right;
+  font-size: 0.75em;
+  @media only screen and (max-width: $break-med){
+    text-align: left;
+  }
+}
+
 .options-container {
   width: 80%;
   margin: auto;
@@ -244,18 +256,14 @@ a {
   position: relative;
 }
 
-.banner-img {
-  width: 80%;
-  max-width: 1200px;
-  height: 100%;
-  margin: auto;
-  background-position: center center;
-  background-size: cover;
-  background-image: url(../img/driving-2.jpg);
-}
 
-.content-h1 {
-  margin-bottom: 100px;
+
+.section-heading {
+  font-size: 2em;
+  margin-bottom: 50px;
+  @media only screen and (max-width: $break-med){
+    margin-bottom: 50px;
+  }
 }
 
 .article-grid {
@@ -284,6 +292,7 @@ a {
   
   @media only screen and (max-width: $break-med) {
     grid-column: 1/2;
+    margin-right: auto;
     max-width: 300px;
     justify-self: center;
   }
