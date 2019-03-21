@@ -91,7 +91,7 @@ a {
   font-weight: 600;
   border: 1px solid $prime;
   &:hover {
-    background: white;
+    background: $second;
     
   }
   @media only screen and (max-width: $break-med){
@@ -410,7 +410,7 @@ a {
   font-weight: 600;
   border: 1px solid $prime;
   &:hover {
-    background: white;
+    background: $second;
     color: $prime;
   }
 }

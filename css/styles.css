@@ -352,7 +352,14 @@ select::-ms-expand {
   -webkit-box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.164);
           box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.164);
   border-radius: 13px;
-  padding: 40px; }
+  padding-left: 40px;
+  padding-right: 40px; }
+  @media only screen and (max-width: 768px) {
+    .services-right {
+      -ms-grid-column: 1;
+      -ms-grid-column-span: 1;
+      grid-column: 1/2;
+      min-height: 300px; } }
   .services-right .perk-container {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -369,6 +376,16 @@ select::-ms-expand {
         -ms-flex: 1;
             flex: 1;
     text-align: left; }
+    @media only screen and (max-width: 768px) {
+      .services-right .perk-container {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        padding: 20px 0; } }
     .services-right .perk-container .perk-text {
       margin-left: 20px; }
     .services-right .perk-container i {
@@ -390,7 +407,7 @@ select::-ms-expand {
   .service-details ul li {
     margin-left: 20px;
     font-weight: 600; }
-    .service-details ul li .fas {
+    .service-details ul li .fal {
       color: #ffc001; }
 
 .service-heading {
@@ -492,7 +509,7 @@ a {
   font-weight: 600;
   border: 1px solid #a70d48; }
   .nav-booking-btn:hover {
-    background: white; }
+    background: #ffc001; }
   @media only screen and (max-width: 768px) {
     .nav-booking-btn {
       padding: 5px 10px; } }
@@ -820,7 +837,7 @@ a {
   font-weight: 600;
   border: 1px solid #a70d48; }
   .booking-btn:hover {
-    background: white;
+    background: #ffc001;
     color: #a70d48; }
 
 .map-section {
