@@ -1,8 +1,8 @@
 @import "_base.scss";
-@import "_vehicles.scss";
 @import "_images.scss";
 @import "_booking.scss";
 @import "_services.scss";
+@import "_intro.scss";
 
 .footer {
   position: absolute;
@@ -224,6 +224,7 @@ a {
   .option {
     text-align: center;
     width: 250px;
+    padding: 0 20px;
 
 
     .option-img {
@@ -261,6 +262,7 @@ a {
 .section-heading {
   font-size: 3em;
   margin-bottom: 50px;
+  font-style: italic;
   @media only screen and (max-width: $break-med){
     margin-bottom: 50px;
   }
