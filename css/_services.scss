@@ -3,10 +3,6 @@
   display: grid;
   grid-template-columns: 2fr 1fr;
   grid-template-rows: auto;
-  & .section-heading {
-    margin-bottom: 0;
-    
-  }
   @media only screen and (max-width: $break-med){
     grid-template-columns: auto;
     grid-template-rows: auto auto;
@@ -15,7 +11,7 @@
 
 .services-left {
   grid-column: 1/2;
-  margin-right: 50px;
+  margin-right: 80px;
   @media only screen and (max-width: $break-med){
     margin-right: 0;
   }
@@ -27,6 +23,7 @@
   max-height: 800px;
   flex-direction: column;
   box-shadow: $shadow;
+  border: 3px solid $prime;
   border-radius: 13px;
   padding-left: 40px;
   padding-right: 40px;
@@ -89,7 +86,7 @@
     & li {
       margin-left: 20px;
       font-weight: 600;
-      
+      color: $dark;
       .fal {
         color: #ffc001;
       }

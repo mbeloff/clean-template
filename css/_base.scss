@@ -8,7 +8,7 @@ $dark: #2c3350;
 $grey: #999aa3;
 $break-med: 768px;
 $break-small: 400px;
-$shadow: 1px 1px 10px rgba(0, 0, 0, 0.164);
+$shadow: 1px 1px 10px rgba(0, 0, 0, 0.26);
 
 
 *,
@@ -39,9 +39,10 @@ body {
   max-width: 1200px;
   margin: auto;
   min-height: 100%;
-
+  
   @media only screen and (max-width: $break-small) {
-    width: 95%;
+    width: 100%;
+    padding: 20px;
   }
 }
 

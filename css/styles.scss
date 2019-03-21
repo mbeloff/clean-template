@@ -21,6 +21,7 @@ a {
   align-items: center;
   justify-content: space-between;
   height: 100px;
+
   @media only screen and (max-width: $break-small) {
     justify-content: flex-end;
   }
@@ -29,7 +30,8 @@ a {
 .nav-left {
   font-weight: 600;
   font-size: 2.5em;
-  @media only screen and (max-width: $break-small){
+
+  @media only screen and (max-width: $break-small) {
     display: none;
   }
 }
@@ -41,10 +43,12 @@ a {
 
 .nav-link {
   margin-left: 10px;
+
   &:hover {
     color: $prime;
   }
-  @media only screen and (max-width: $break-med){
+
+  @media only screen and (max-width: $break-med) {
     margin-left: 5px;
     font-size: .8em;
   }
@@ -60,22 +64,25 @@ a {
 }
 
 .dropdown {
- display: none;
- position: absolute;
- left: -15px;
- top: 1.2em;
- width: 175px;
- line-height: 1.4em;
- background: white;
- padding: 10px 15px;;
- border-radius: 2px;
- box-shadow: $shadow;
- ul {
-   list-style: none;
- }
- a {
-  font-weight: 600;
- }
+  display: none;
+  position: absolute;
+  left: -15px;
+  top: 1.2em;
+  width: 175px;
+  line-height: 1.4em;
+  background: white;
+  padding: 10px 15px;
+  ;
+  border-radius: 2px;
+  box-shadow: $shadow;
+
+  ul {
+    list-style: none;
+  }
+
+  a {
+    font-weight: 600;
+  }
 }
 
 .bold-link {
@@ -90,11 +97,13 @@ a {
   border-radius: 20px;
   font-weight: 600;
   border: 1px solid $prime;
+
   &:hover {
     background: $second;
-    
+
   }
-  @media only screen and (max-width: $break-med){
+
+  @media only screen and (max-width: $break-med) {
     padding: 5px 10px;
   }
 }
@@ -112,8 +121,10 @@ a {
     "image sub";
   align-items: center;
   margin-bottom: 60px;
-  @media only screen and (max-width: $break-med){
+
+  @media only screen and (max-width: $break-med) {
     margin-bottom: 30px;
+    width: 80%;
   }
 
   @media only screen and (max-width: $break-small) {
@@ -144,6 +155,7 @@ a {
 .header-right {
   padding-left: 20px;
   width: 100%;
+  color: $second;
 }
 
 .header-heading {
@@ -158,7 +170,7 @@ a {
   }
 
   @media only screen and (max-width: 580px) {
-    font-size: 2em;
+    font-size: 1.75em;
   }
 }
 
@@ -173,20 +185,22 @@ a {
 
   @media only screen and (max-width: $break-small) {
     justify-self: center;
+    font-size: 1.5em;
   }
 }
 
 .main {
   display: grid;
   grid-template-areas:
-  "content sidegrid";
+    "content sidegrid";
   grid-template-columns: 3fr 2fr;
   grid-gap: 2em;
   margin-bottom: 1em;
-  @media only screen and (max-width: $break-med){
+
+  @media only screen and (max-width: $break-med) {
     grid-template-areas:
-    "content"
-    "sidegrid";
+      "content"
+      "sidegrid";
     grid-template-columns: 1fr;
   }
 }
@@ -200,7 +214,8 @@ a {
   color: $prime;
   text-align: right;
   font-size: 0.75em;
-  @media only screen and (max-width: $break-med){
+
+  @media only screen and (max-width: $break-med) {
     text-align: left;
   }
 }
@@ -217,8 +232,12 @@ a {
     width: 95%;
 
   }
-  @media only screen and (max-width: $break-small) {
 
+  @media only screen and (max-width: $break-small) {
+    margin-bottom: 30px;
+    & .fal {
+      font-size: 1.5em;
+    }
   }
 
   .option {
@@ -236,6 +255,7 @@ a {
       margin-bottom: 20px;
       color: $prime;
       font-weight: 400;
+
       @media only screen and (max-width: $break-med) {
         margin-bottom: 10px;
       }
@@ -255,6 +275,9 @@ a {
   width: 100%;
   margin-bottom: 2em;
   position: relative;
+  @media only screen and (max-width: $break-small){
+    display: none;
+  }
 }
 
 
@@ -263,7 +286,8 @@ a {
   font-size: 3em;
   margin-bottom: 50px;
   font-style: italic;
-  @media only screen and (max-width: $break-med){
+
+  @media only screen and (max-width: $break-med) {
     margin-bottom: 50px;
   }
 }
@@ -291,7 +315,7 @@ a {
   position: relative;
   overflow: hidden;
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.219);
-  
+
   @media only screen and (max-width: $break-med) {
     grid-column: 1/2;
     margin-right: auto;
@@ -316,7 +340,8 @@ a {
   font-size: 3em;
   transform: rotate(-30deg);
   box-shadow: 0px 0px 0px 5px white;
-  @media only screen and (max-width: $break-med){
+
+  @media only screen and (max-width: $break-med) {
     transform: rotate(-37deg);
     right: -50%;
     font-size: 3.5em
@@ -342,55 +367,6 @@ a {
   background-image: url(../img/van-side-open.jpg)
 }
 
-.service-flex {
-  width: 100%;
-  grid-area: sidegrid;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-}
-
-.service-img {
-  flex: 1;
-  height: 100px;
-  border-top: 2px solid $prime;
-  background-size: cover;
-  background-position: center;
-  // margin-bottom: 5px;
-  box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.096);
-  
-  // border-radius: 5px;
-}
-
-.service-img-overlay {
-    color: white;
-    overflow: hidden;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.2);
-  &:hover {
-    background: rgba(0, 0, 0, 0.8);
-  }
-  transition: background 500ms ease;
-}
-
-
-
-.overlay-heading { 
-  margin-bottom: 10px;
-  color: white;
-  padding: 7px;
-  font-family: arial;
-  font-weight: 800;
-  background: $prime;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  i {
-    color: rgb(255, 212, 21);
-    margin-right: 5px;
-  }
-}
-
 .overlay-p {
   display: none;
   padding: 20px;
@@ -411,6 +387,7 @@ a {
   border-radius: 30px;
   font-weight: 600;
   border: 1px solid $prime;
+
   &:hover {
     background: $second;
     color: $prime;
@@ -419,10 +396,12 @@ a {
 
 //map section
 .map-section {
-  background: #3333;
+  background: rgba(128, 128, 128, 0.158);
   display: flex;
   padding: 20px;
-  @media only screen and (max-width: $break-small){
+  margin-bottom: 50px;
+  box-shadow: $shadow;
+  @media only screen and (max-width: $break-small) {
     padding: 0;
   }
 }
@@ -439,12 +418,14 @@ a {
 
 //google maps
 .mapouter {
-  text-align:right;
+  text-align: right;
 }
+
 .gmap_canvas {
-  overflow:hidden;
-  background:none!important;
+  overflow: hidden;
+  background: none !important;
 }
+
 #gmap_canvas {
   width: 100%;
   height: 300px;
@@ -453,7 +434,7 @@ a {
 .footer-bar {
   background: $prime;
   height: 40px;
-  
+
 
   & .footer-bar-container {
     display: flex;
@@ -481,7 +462,8 @@ a {
   display: flex;
   flex-direction: column;
   padding: 10px;
-  @media only screen and (max-width: $break-small){
+
+  @media only screen and (max-width: $break-small) {
     font-size: .8em;
   }
 }

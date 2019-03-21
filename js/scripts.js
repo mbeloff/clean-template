@@ -5,15 +5,6 @@ $(".nav-droplink").mouseleave(function () {
   $(".dropdown").hide(100);
 })
 
-$(".service-img-overlay").hover(function () {
-  $(this).children(".overlay-p").stop().slideDown(200);
-  $(this).children(".overlay-heading").stop().slideUp(200);
-})
-$(".service-img-overlay").mouseleave(function () {
-  $(this).children(".overlay-p").stop().slideUp(100);
-  $(this).children(".overlay-heading").stop().slideDown(200);
-})
-
 
 //booking show
 $(".show-booking").click(function () {
