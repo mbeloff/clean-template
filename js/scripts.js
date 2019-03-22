@@ -10,13 +10,13 @@ $(".nav-droplink").mouseleave(function () {
 $(".show-booking").click(function () {
   if (!$(".booking-container").is(":visible")) {
     $(".booking-container").slideDown();
-    $(".booking-btn").text("close");
+    $(".booking-close").text("close");
     $('html, body').animate({
       scrollTop: ($('#booking-section').offset().top - 20)
     }, 500);
   } else {
     $(".booking-container").slideUp();
-    $(".booking-btn").text("Get a Quote");
+    $(".booking-close").text("Get a Quote");
   }
 })
 

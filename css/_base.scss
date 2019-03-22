@@ -1,12 +1,14 @@
 $font-1: 'Source Sans Pro',
 sans-serif;
-$prime: #a70d48;
-$second: #ffc001;
+
+$prime: #f54545;
+// $prime: #a70d48;
+$second: #ffffff;
 $dark: #2c3350;
 $grey: #999aa3;
 $break-med: 768px;
 $break-small: 400px;
-$shadow: 1px 1px 10px rgba(0, 0, 0, 0.26);
+$shadow: 1px 1px 10px rgba(0, 0, 0, 0.377);
 *,
 *::before,
 *::after {
