@@ -5,7 +5,11 @@
 }
 
 .intro-top {
-  margin-bottom: 100px;
+  // margin-bottom: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex: 1;
 }
 
 .intro-grid {
@@ -77,25 +81,4 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  i {
-    color: rgb(255, 212, 21);
-    margin-right: 5px;
-  }
-}
-
-.intro-bottom {
-  display: flex;
-  flex: 1;
-  height: fit-content;
-  margin-bottom: -50px;
-}
-
-.intro-img {
-  width: 50%;
-  height: 100%;
-  background-position: center center;
-  background-size: cover;
-  @media only screen and (max-width: $break-med){
-    height: 200px;
-  }
 }

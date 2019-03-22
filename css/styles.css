@@ -26,23 +26,7 @@ body {
   @media only screen and (max-width: 400px) {
     .container {
       width: 100%;
-      padding: 20px; } }
-
-.btn {
-  -ms-flex-item-align: end;
-      align-self: flex-end;
-  background: #a70d48;
-  max-width: 200px;
-  text-align: center;
-  color: white;
-  padding: 10px 20px;
-  border-radius: 20px;
-  font-weight: 600;
-  -webkit-box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.308);
-          box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.308); }
-  @media only screen and (max-width: 768px) {
-    .btn {
-      padding: 5px 10px; } }
+      padding: 0 20px; } }
 
 .services-item-1 {
   background: url(../img/van-interior.jpg); }
@@ -59,31 +43,8 @@ body {
 .services-item-5 {
   background: url(../img/van-out-window-r.jpg); }
 
-.services-item-6 {
-  background: url(../img/van-junk.jpg); }
-
-.van-1 {
-  background-image: url(../img/van-side-open.jpg); }
-
-.van-2 {
-  background-image: url(../img/van-interior.jpg); }
-
-.van-3 {
-  background-image: url(../img/van-back.jpg); }
-
-.services-banner-img {
-  background-image: url(../img/driving.jpg); }
-
 .home-banner-img {
-  background-image: url(../img/driving-2.jpg); }
-
-.vehicle-img {
-  background-image: url(../img/van.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
-  width: 100%;
-  height: 100%; }
+  background-image: url(../img/driving.jpg); }
 
 .banner-img {
   width: 90%;
@@ -92,13 +53,6 @@ body {
   margin: auto;
   background-position: center center;
   background-size: cover; }
-
-.intro-img-1 {
-  background-image: url(../img/van-side-open.jpg);
-  margin-right: 10px; }
-
-.intro-img-2 {
-  background-image: url(../img/van-interior.jpg); }
 
 .booking-form {
   max-width: 642px;
@@ -220,56 +174,6 @@ body {
   border-radius: 3px;
   text-transform: uppercase; }
 
-.row {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around; }
-
-.selectdiv {
-  position: relative;
-  float: left;
-  min-width: 200px;
-  margin: 50px 33%; }
-
-.selectdiv:after {
-  content: '\f078';
-  font: normal normal normal 17px/1 FontAwesome;
-  color: #0ebeff;
-  right: 11px;
-  top: 6px;
-  height: 34px;
-  padding: 15px 0px 0px 8px;
-  border-left: 1px solid #0ebeff;
-  position: absolute;
-  pointer-events: none; }
-
-/* IE11 hide native button (thanks Matt!) */
-select::-ms-expand {
-  display: none; }
-
-.selectdiv select {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  /* Add some styling */
-  display: block;
-  width: 100%;
-  max-width: 320px;
-  height: 50px;
-  float: right;
-  margin: 5px 0px;
-  padding: 0px 24px;
-  font-size: 16px;
-  line-height: 1.75;
-  color: #333;
-  background-color: #ffffff;
-  background-image: none;
-  border: 1px solid #0ebeff;
-  -ms-word-break: normal;
-  word-break: normal; }
-
 .services-section {
   margin-bottom: 50px;
   display: -ms-grid;
@@ -374,25 +278,29 @@ select::-ms-expand {
   -ms-grid-column-span: 2;
   grid-column: 1/3; }
 
-.service-details ul {
-  -webkit-columns: 2;
-          columns: 2;
-  margin-bottom: 20px;
-  list-style: none;
-  line-height: 1.5em; }
-  @media only screen and (max-width: 768px) {
-    .service-details ul {
-      -webkit-columns: 1;
-              columns: 1; } }
-  .service-details ul li {
-    margin-left: 20px;
-    font-weight: 600;
-    color: #2c3350; }
-    .service-details ul li .fal {
-      color: #ffc001; }
+.service-details {
+  margin-bottom: 60px; }
+  .service-details ul {
+    width: 50%;
+    margin-bottom: 20px;
+    list-style: none;
+    line-height: 1.5em; }
+    @media only screen and (max-width: 768px) {
+      .service-details ul {
+        -webkit-columns: 1;
+                columns: 1;
+        width: 100%; } }
+    .service-details ul li {
+      font-weight: 600;
+      color: #2c3350; }
+      .service-details ul li .fal {
+        color: #ffc001; }
+    .service-details ul li:nth-of-type(2n+1) {
+      background: #f0eaec; }
 
 .service-heading {
   margin-bottom: 15px;
+  font-weight: 400;
   color: #a70d48;
   font-size: 2em; }
   .service-heading span {
@@ -405,7 +313,19 @@ select::-ms-expand {
   margin-bottom: 75px; }
 
 .intro-top {
-  margin-bottom: 100px; }
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1; }
 
 .intro-grid {
   display: -ms-grid;
@@ -500,30 +420,6 @@ select::-ms-expand {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center; }
-  .overlay-heading i {
-    color: #ffd415;
-    margin-right: 5px; }
-
-.intro-bottom {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
-  margin-bottom: -50px; }
-
-.intro-img {
-  width: 50%;
-  height: 100%;
-  background-position: center center;
-  background-size: cover; }
-  @media only screen and (max-width: 768px) {
-    .intro-img {
-      height: 200px; } }
 
 .footer {
   position: absolute;
@@ -618,6 +514,9 @@ a {
   @media only screen and (max-width: 768px) {
     .nav-booking-btn {
       padding: 5px 10px; } }
+  @media only screen and (max-width: 400px) {
+    .nav-booking-btn {
+      padding: 2px 5px; } }
 
 .header-container {
   width: 70%;
@@ -710,34 +609,6 @@ a {
           justify-self: center;
       font-size: 1.5em; } }
 
-.main {
-  display: -ms-grid;
-  display: grid;
-      grid-template-areas: "content sidegrid";
-  -ms-grid-columns: 3fr 2fr;
-      grid-template-columns: 3fr 2fr;
-  grid-gap: 2em;
-  margin-bottom: 1em; }
-  @media only screen and (max-width: 768px) {
-    .main {
-          grid-template-areas: "content" "sidegrid";
-      -ms-grid-columns: 1fr;
-          grid-template-columns: 1fr; } }
-
-.content-article {
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
-  grid-area: content;
-  width: 100%; }
-
-.article-disclaimer {
-  color: #a70d48;
-  text-align: right;
-  font-size: 0.75em; }
-  @media only screen and (max-width: 768px) {
-    .article-disclaimer {
-      text-align: left; } }
-
 .options-container {
   width: 80%;
   margin: auto;
@@ -789,92 +660,13 @@ a {
 
 .section-heading {
   font-size: 3em;
-  margin-bottom: 50px;
-  font-style: italic; }
+  margin-top: 50px;
+  margin-bottom: 80px;
+  font-style: italic;
+  text-align: center; }
   @media only screen and (max-width: 768px) {
     .section-heading {
       margin-bottom: 50px; } }
-
-.article-grid {
-  display: -ms-grid;
-  display: grid;
-  width: 100%;
-  grid-gap: 1em;
-  -ms-grid-columns: 1fr 200px;
-      grid-template-columns: 1fr 200px;
-  margin-bottom: 1em; }
-  @media only screen and (max-width: 768px) {
-    .article-grid {
-      -ms-grid-columns: 1fr;
-          grid-template-columns: 1fr;
-      -ms-grid-rows: auto auto;
-          grid-template-rows: auto auto;
-      grid-gap: 1em; } }
-
-.article-img {
-  -ms-grid-column: 2;
-  -ms-grid-column-span: 1;
-  grid-column: 2/3;
-  width: 100%;
-  height: 200px;
-  background: #a70d48;
-  background-size: cover;
-  position: relative;
-  overflow: hidden;
-  -webkit-box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.219);
-          box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.219); }
-  @media only screen and (max-width: 768px) {
-    .article-img {
-      -ms-grid-column: 1;
-      -ms-grid-column-span: 1;
-      grid-column: 1/2;
-      margin-right: auto;
-      max-width: 300px;
-      -ms-grid-column-align: center;
-          justify-self: center; } }
-
-.img-banner {
-  font-family: impact;
-  font-style: italic;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: 150%;
-  height: 1.5em;
-  background: #a70d48;
-  position: absolute;
-  bottom: 11%;
-  right: -30%;
-  color: white;
-  font-size: 3em;
-  -webkit-transform: rotate(-30deg);
-          transform: rotate(-30deg);
-  -webkit-box-shadow: 0px 0px 0px 5px white;
-          box-shadow: 0px 0px 0px 5px white; }
-  @media only screen and (max-width: 768px) {
-    .img-banner {
-      -webkit-transform: rotate(-37deg);
-              transform: rotate(-37deg);
-      right: -50%;
-      font-size: 3.5em; } }
-
-.banner-text span {
-  font-size: .5em; }
-
-.img-van {
-  background-image: url(../img/van-side.jpg); }
-
-.img-truck {
-  background-image: url(../img/truck-3q.jpg); }
-
-.img-van-open {
-  background-image: url(../img/van-side-open.jpg); }
 
 .overlay-p {
   display: none;
@@ -937,6 +729,8 @@ a {
 .footer-bar {
   background: #a70d48;
   height: 40px; }
+  .footer-bar .footer-bar-text {
+    color: #999aa3; }
   .footer-bar .footer-bar-container {
     display: -webkit-box;
     display: -ms-flexbox;

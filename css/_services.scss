@@ -75,27 +75,33 @@
 }
 
 .service-details {
+  margin-bottom: 60px;
   & ul {
-    columns: 2;
+    width: 50%;
     margin-bottom: 20px;
     list-style: none;
     line-height: 1.5em;
     @media only screen and (max-width: $break-med){
       columns: 1;
+      width: 100%;
     }
     & li {
-      margin-left: 20px;
+      // margin-left: 20px;
       font-weight: 600;
       color: $dark;
       .fal {
         color: #ffc001;
       }
     }
+    & li:nth-of-type(2n+1){
+      background: rgb(240, 234, 236);
+    }
   }
 }
 
 .service-heading {
   margin-bottom: 15px;
+  font-weight: 400;
   color: $prime;
   font-size: 2em;
   & span {
