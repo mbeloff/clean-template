@@ -1,11 +1,8 @@
-
-
 .intro-section {
   margin-bottom: 75px;
 }
 
 .intro-top {
-  // margin-bottom: 100px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -16,7 +13,7 @@
   display: grid;
   grid-template-columns: 2fr 1fr;
   grid-gap: 80px;
-  @media only screen and (max-width: $break-med){
+  @media only screen and (max-width: $break-med) {
     grid-template-columns: 1fr;
   }
 }
@@ -27,12 +24,11 @@
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  @media only screen and (max-width: $break-med){
+  @media only screen and (max-width: $break-med) {
     grid-column: 1/2;
     grid-row: 2/3;
     align-content: center;
   }
-  
 }
 
 .service-img {
@@ -41,23 +37,22 @@
   background-size: cover;
   background-position: center;
   margin-top: 5px;
-  box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.096);  
+  box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.096);
   border-radius: 5px;
-  overflow:hidden;
-  @media only screen and (max-width: $break-med){
+  overflow: hidden;
+  @media only screen and (max-width: $break-med) {
     width: 100%;
     height: 120px;
   }
 }
 
 .service-img-overlay {
-    color: white;
-    overflow: hidden;
+  color: white;
+  overflow: hidden;
   height: 100%;
   background: rgba(0, 0, 0, 0.2);
   transition: background 500ms ease;
 }
-
 
 .intro-text {
   margin-bottom: 1em;
@@ -70,7 +65,7 @@
   align-content: space-between;
 }
 
-.overlay-heading { 
+.overlay-heading {
   margin-bottom: 10px;
   font-style: italic;
   color: rgb(243, 165, 21);
