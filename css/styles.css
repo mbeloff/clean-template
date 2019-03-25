@@ -268,11 +268,15 @@ body {
         .services-right .perk-container .perk-text {
           margin-top: 20px;
           margin-left: 0; } }
-    .services-right .perk-container i:nth-of-type(odd) {
-      color: #f54545; }
 
 .perk-container:nth-child(-n+1) {
   border-top: none; }
+
+.fal.perk-icon {
+  color: #f54545;
+  padding: 5px;
+  border-radius: 5px;
+  border: 2px solid #dd0b0b; }
 
 .services-intro {
   margin-bottom: 50px;
@@ -424,12 +428,6 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center; }
-
-.footer {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  height: 180px; }
 
 a {
   text-decoration: none;
@@ -777,4 +775,10 @@ a {
 
 .footer-heading {
   margin-bottom: 20px; }
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 180px; }
 /*# sourceMappingURL=styles.css.map */

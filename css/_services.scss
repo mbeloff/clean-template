@@ -60,14 +60,18 @@
         margin-left: 0;
       }
     }
-    i:nth-of-type(odd) {
-      color: $prime;
-    }
   }
 }
 
 .perk-container:nth-child(-n+1) {
   border-top: none;
+}
+
+.fal.perk-icon {
+  color: $prime;
+  padding: 5px;
+  border-radius: 5px;
+  border: 2px solid rgb(221, 11, 11);
 }
 
 .services-intro {
