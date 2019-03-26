@@ -28,6 +28,9 @@ body {
       width: 100%;
       padding: 0 20px; } }
 
+.container.map-container {
+  padding: 5px; }
+
 .services-item-1 {
   background: url(../img/van-interior.jpg); }
 
@@ -211,8 +214,6 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.377);
-          box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.377);
   -ms-flex-item-align: center;
       align-self: center;
   border-radius: 13px;
@@ -416,6 +417,7 @@ body {
   margin-bottom: 10px;
   font-style: italic;
   color: #f3b84a;
+  font-size: 1.5em;
   padding: 7px;
   font-family: arial;
   font-weight: 400;
@@ -444,7 +446,7 @@ a {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  height: 100px; }
+  height: 60px; }
   @media only screen and (max-width: 400px) {
     .nav-container {
       -webkit-box-pack: end;
@@ -612,6 +614,12 @@ a {
           justify-self: center;
       font-size: 1.5em; } }
 
+.top-bar {
+  background: #ee3939; }
+  .top-bar p {
+    text-align: center;
+    color: white; }
+
 .options-container {
   width: 80%;
   margin: auto;
@@ -703,9 +711,7 @@ a {
   display: -ms-flexbox;
   display: flex;
   padding: 20px;
-  margin-bottom: 50px;
-  -webkit-box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.377);
-          box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.377); }
+  margin-bottom: 50px; }
   @media only screen and (max-width: 400px) {
     .map-section {
       padding: 0; } }
@@ -717,6 +723,9 @@ a {
 
 .map-address {
   margin-bottom: 20px; }
+  .map-address span {
+    font-style: italic;
+    font-weight: 600; }
 
 .mapouter {
   text-align: right; }
@@ -756,7 +765,10 @@ a {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 20px 0; }
+  padding: 20px 0;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1; }
 
 .footer-link {
   color: #2053fa; }
