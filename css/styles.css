@@ -213,7 +213,6 @@ body {
           flex-direction: column;
   -webkit-box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.377);
           box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.377);
-  border: 3px solid #ee3939;
   -ms-flex-item-align: center;
       align-self: center;
   border-radius: 13px;
@@ -273,12 +272,12 @@ body {
   border-top: none; }
 
 .fal.perk-icon {
-  color: #ee3939;
-  padding: 5px;
+  color: #f3b84a;
+  background: #221e1e;
+  padding: 9px;
   border-radius: 5px;
-  border: 2px solid #dd0b0b;
-  -webkit-box-shadow: 1px 3px #2c3350;
-          box-shadow: 1px 3px #2c3350; }
+  -webkit-box-shadow: 0px 2px #e09200;
+          box-shadow: 0px 2px #e09200; }
 
 .services-intro {
   margin-bottom: 50px;
