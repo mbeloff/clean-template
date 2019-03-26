@@ -63,7 +63,7 @@ body {
   display: none; }
 
 .booking-form > form {
-  background-color: #f54545;
+  background-color: #ee3939;
   padding: 30px 20px;
   border-radius: 3px;
   -webkit-box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.377);
@@ -213,7 +213,7 @@ body {
           flex-direction: column;
   -webkit-box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.377);
           box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.377);
-  border: 3px solid #f54545;
+  border: 3px solid #ee3939;
   -ms-flex-item-align: center;
       align-self: center;
   border-radius: 13px;
@@ -273,10 +273,12 @@ body {
   border-top: none; }
 
 .fal.perk-icon {
-  color: #f54545;
+  color: #ee3939;
   padding: 5px;
   border-radius: 5px;
-  border: 2px solid #dd0b0b; }
+  border: 2px solid #dd0b0b;
+  -webkit-box-shadow: 1px 3px #2c3350;
+          box-shadow: 1px 3px #2c3350; }
 
 .services-intro {
   margin-bottom: 50px;
@@ -309,7 +311,7 @@ body {
 .service-heading {
   margin-bottom: 15px;
   font-weight: 400;
-  color: #f54545;
+  color: #ee3939;
   font-size: 2em; }
   .service-heading span {
     color: #2c3350; }
@@ -466,7 +468,7 @@ a {
 .nav-link {
   margin-left: 10px; }
   .nav-link:hover {
-    color: #f54545; }
+    color: #ee3939; }
   @media only screen and (max-width: 768px) {
     .nav-link {
       margin-left: 5px;
@@ -502,15 +504,15 @@ a {
 
 .bold-link {
   font-weight: 800;
-  color: #f54545; }
+  color: #ee3939; }
 
 .nav-booking-btn {
-  background: #f54545;
+  background: #ee3939;
   color: white;
   padding: 10px 20px;
   border-radius: 20px;
   font-weight: 600;
-  border: 1px solid #f54545; }
+  border: 1px solid #ee3939; }
   .nav-booking-btn:hover {
     background: #ffffff; }
   @media only screen and (max-width: 768px) {
@@ -637,10 +639,10 @@ a {
     padding: 0 20px; }
     .options-container .option .option-img {
       margin-bottom: 10px;
-      color: #f54545; }
+      color: #ee3939; }
     .options-container .option .option-heading {
       margin-bottom: 20px;
-      color: #f54545;
+      color: #ee3939;
       font-weight: 400; }
       @media only screen and (max-width: 768px) {
         .options-container .option .option-heading {
@@ -652,7 +654,7 @@ a {
 
 .banner {
   height: 200px;
-  background: #f54545;
+  background: #ee3939;
   width: 100%;
   margin-bottom: 2em;
   position: relative; }
@@ -686,15 +688,15 @@ a {
 
 .booking-btn {
   margin-bottom: 25px;
-  background: #f54545;
+  background: #ee3939;
   color: white;
   padding: 20px 30px;
   border-radius: 30px;
   font-weight: 600;
-  border: 1px solid #f54545; }
+  border: 1px solid #ee3939; }
   .booking-btn:hover {
     background: #ffffff;
-    color: #f54545; }
+    color: #ee3939; }
 
 .map-section {
   background: rgba(128, 128, 128, 0.158);
@@ -729,7 +731,7 @@ a {
   height: 300px; }
 
 .footer-bar {
-  background: #f54545;
+  background: #ee3939;
   height: 40px; }
   .footer-bar .footer-bar-text {
     color: white; }
