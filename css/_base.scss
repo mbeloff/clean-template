@@ -43,6 +43,10 @@ body {
   }
 }
 
+.container.top-section {
+  min-height: 100vh;
+}
+
 .container.map-container {
   padding: 5px;
 }
